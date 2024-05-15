@@ -1,0 +1,92 @@
+ body {
+ background-color: rgb(41 177 228 / 30%);
+}
+.customizer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .umbrella {
+    position: relative;
+  }
+  .umbrella-image-div {
+    width: 20rem;
+  }
+  .loader-image-div{
+    width: 3rem;
+    margin-right: 6rem;
+    animation: circularMotion 5s linear infinite;
+  }
+  @keyframes circularMotion {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .controls {
+    margin-left: 20px;
+  }
+  
+  .color-picker {
+    margin-bottom: 20px;
+  }
+  
+  .color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #logo-image {
+    position: absolute;
+    bottom: 17px;
+    left: 62%;
+    transform: translateX(-50%);
+    max-width: 80%;
+    display: none;
+  }
+  .color[data-color="pink"] {
+    background-color: #d0006f;
+  }
+  
+  .color[data-color="blue"] {
+    background-color: #00a3e0;
+  }
+  
+  .color[data-color="yellow"] {
+    background-color:#fed141;
+  }
+
+
+input[type="file"] {
+    display: none;
+}
+
+.upload-button {
+    height: 1.5rem;
+    background: #00a3e0;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.upload-button img {
+    margin-right: 5px; 
+}
+
+.upload-text {
+    flex: 1;
+    text-align: center; 
+    color: white;
+}
+.remove-file{
+
+  color: white;
+
+}
